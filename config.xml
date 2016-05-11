@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<beans xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+  <bean id="rental" class="Rental">
+    <property name="rentalContract" bean="rentalContract"/>
+    <property name="return" bean="return"/>
+    <property name="damages" bean="damages"/>
+  </bean>
+  <bean id="rentalContract" class="RentalContract" link=""/>
+  <bean id="return" class="Return"/>
+  <bean id="damages" class="Damages" link=""/>
+</beans>

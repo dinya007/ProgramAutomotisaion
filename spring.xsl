@@ -2,8 +2,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:uml="http://schema.omg.org/spec/UML/2.0"
-                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
->
+                xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
 
     <xsl:output method="xml" indent="yes"/>
 
@@ -70,6 +69,17 @@
                 <xsl:value-of
                         select="@name"/>
             </xsl:attribute>
+
+            <xsl:variable name="id" select="@xmi:id"/>
+
+            <!--<xsl:variable name="matching-items" select="/xmi:XMI/uml:Model/ownedMember/ownedMember[end/@role=$id]" />-->
+
+            <xsl:for-each select="/xmi:XMI/uml:Model/ownedMember/ownedMember[end/@role=$id]">
+                <xsl:attribute name="link">
+                    <xsl:value-of
+                            select="@name"/>
+                </xsl:attribute>
+            </xsl:for-each>
 
         </xsl:element>
     </xsl:template>
