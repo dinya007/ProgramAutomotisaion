@@ -6,7 +6,6 @@
 
     <xsl:output method="xml" indent="yes"/>
 
-
     <xsl:template match="/">
         <beans>
             <xsl:for-each select="xmi:XMI/uml:Model">
@@ -62,7 +61,6 @@
             <xsl:attribute name="id">
                 <xsl:value-of
                         select="concat(translate(substring(@name, 1, 1), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), substring(@name, 2))"/>
-
             </xsl:attribute>
 
             <xsl:attribute name="class">
@@ -71,14 +69,25 @@
             </xsl:attribute>
 
             <xsl:variable name="id" select="@xmi:id"/>
+            <xsl:variable name="name" select="@name"/>
 
-            <!--<xsl:variable name="matching-items" select="/xmi:XMI/uml:Model/ownedMember/ownedMember[end/@role=$id]" />-->
+            <xsl:for-each select="/xmi:XMI/uml:Model/ownedMember/ownedMember/end[@role=$id]/following-sibling::end[1] | /xmi:XMI/uml:Model/ownedMember/ownedMember/end[@role=$id]/preceding-sibling::end[1]">
 
-            <xsl:for-each select="/xmi:XMI/uml:Model/ownedMember/ownedMember[end/@role=$id]">
-                <xsl:attribute name="link">
-                    <xsl:value-of
-                            select="@name"/>
-                </xsl:attribute>
+                <xsl:variable name="referenceId" select="@role"/>
+                <!--<xsl:variable name="referenceName" select="/xmi:XMI/uml:Model/ownedMember/ownedAttribute[@xmi:id=$referenceId]/@name"/>-->
+
+
+                <xsl:element name="property">
+                    <xsl:attribute name="name">
+                        <xsl:value-of
+                                select="concat(translate(substring(/xmi:XMI/uml:Model/ownedMember/ownedAttribute[@xmi:id=$referenceId]/@name, 1, 1), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), substring(/xmi:XMI/uml:Model/ownedMember/ownedAttribute[@xmi:id=$referenceId]/@name, 2))"/>
+
+                    </xsl:attribute>
+                    <xsl:attribute name="bean">
+                        <xsl:value-of
+                                select="/xmi:XMI/uml:Model/ownedMember/ownedAttribute[@xmi:id=$referenceId]/@name"/>
+                    </xsl:attribute>
+                </xsl:element>
             </xsl:for-each>
 
         </xsl:element>

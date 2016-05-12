@@ -5,7 +5,11 @@
     <property name="return" bean="return"/>
     <property name="damages" bean="damages"/>
   </bean>
-  <bean id="rentalContract" class="RentalContract" link=""/>
+  <bean id="rentalContract" class="RentalContract">
+    <property name="damages" bean="Damages"/>
+  </bean>
   <bean id="return" class="Return"/>
-  <bean id="damages" class="Damages" link=""/>
+  <bean id="damages" class="Damages">
+    <property name="rentalContract" bean="RentalContract"/>
+  </bean>
 </beans>
