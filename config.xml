@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <beans xmlns:uml="http://schema.omg.org/spec/UML/2.0" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
   <bean id="rental" class="Rental">
-    <property name="rentalContract" bean="rentalContract"/>
-    <property name="return" bean="return"/>
-    <property name="damages" bean="damages"/>
-  </bean>
-  <bean id="rentalContract" class="RentalContract">
+    <property name="rental" bean="RentalContract"/>
+    <property name="return" bean="Return"/>
     <property name="damages" bean="Damages"/>
   </bean>
-  <bean id="return" class="Return"/>
+  <bean id="rental" class="RentalContract">
+    <property name="FIO" value="${FIO}"/>
+  </bean>
+  <bean id="return" class="Return">
+    <property name="sadasdasd" value="${sadasdasd}"/>
+  </bean>
   <bean id="damages" class="Damages">
-    <property name="rentalContract" bean="RentalContract"/>
+    <property name="amount" value="${amount}"/>
   </bean>
 </beans>

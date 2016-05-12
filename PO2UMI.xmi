@@ -6748,45 +6748,48 @@
 				<businessModel xmi:value="false"/>
 				<qualityScore value="-1"/>
 			</xmi:Extension>
-			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="RentalContract" visibility="private" xmi:id="ts54hSqGAqAAZRG5" xmi:type="uml:Property">
+			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="rental" type="RentalContract_id" visibility="private" xmi:id="ts54hSqGAqAAZRG5" xmi:type="uml:Property">
 				<xmi:Extension extender="Visual Paradigm">
 					<attribute/>
 					<isVisble xmi:value="true"/>
 					<qualityScore value="-1"/>
 				</xmi:Extension>
-			</ownedAttribute>
-			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="Return" visibility="private" xmi:id="x7V4hSqGAqAAZRHM" xmi:type="uml:Property">
-				<xmi:Extension extender="Visual Paradigm">
-					<attribute/>
-					<isVisble xmi:value="true"/>
-					<qualityScore value="-1"/>
-				</xmi:Extension>
-			</ownedAttribute>
-			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="Damages" visibility="private" xmi:id="P4YMhSqGAqAAZRIe" xmi:type="uml:Property">
-				<xmi:Extension extender="Visual Paradigm">
-					<attribute/>
-					<isVisble xmi:value="true"/>
-					<qualityScore value="-1"/>
-				</xmi:Extension>
-			</ownedAttribute>
-			<ownedMember xmi:id="qOEMhSqGAqAAZRIl" xmi:type="uml:Connector">
-				<end role="P4YMhSqGAqAAZRIe" xmi:id="qOEMhSqGAqAAZRIm" xmi:type="uml:ConnectorEnd">
+				<ownedMember aggregation="shared" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="FIO" type="String_id" visibility="private" xmi:id="k7O4JSqFYHwKdAaA" xmi:type="uml:Property">
 					<xmi:Extension extender="Visual Paradigm">
-						<modelType value="ConnectorEnd"/>
+						<attribute/>
+						<isVisble xmi:value="true"/>
 						<qualityScore value="-1"/>
 					</xmi:Extension>
-				</end>
-				<end role="ts54hSqGAqAAZRG5" xmi:id="qOEMhSqGAqAAZRIn" xmi:type="uml:ConnectorEnd">
-					<xmi:Extension extender="Visual Paradigm">
-						<modelType value="ConnectorEnd"/>
-						<qualityScore value="-1"/>
-					</xmi:Extension>
-				</end>
+				</ownedMember>
+			</ownedAttribute>
+			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="return" type="Return_id" visibility="private" xmi:id="x7V4hSqGAqAAZRHM" xmi:type="uml:Property">
 				<xmi:Extension extender="Visual Paradigm">
-					<modelType value="Connector"/>
+					<attribute/>
+					<isVisble xmi:value="true"/>
 					<qualityScore value="-1"/>
 				</xmi:Extension>
-			</ownedMember>
+				<ownedMember aggregation="shared" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="sadasdasd" type="String_id" visibility="private" xmi:id="2GM0JSqFYHwKdAa_" xmi:type="uml:Property">
+					<xmi:Extension extender="Visual Paradigm">
+						<attribute/>
+						<isVisble xmi:value="true"/>
+						<qualityScore value="-1"/>
+					</xmi:Extension>
+				</ownedMember>
+			</ownedAttribute>
+			<ownedAttribute aggregation="composite" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="damages" type="Damages_id" visibility="private" xmi:id="P4YMhSqGAqAAZRIe" xmi:type="uml:Property">
+				<xmi:Extension extender="Visual Paradigm">
+					<attribute/>
+					<isVisble xmi:value="true"/>
+					<qualityScore value="-1"/>
+				</xmi:Extension>
+				<ownedMember aggregation="shared" isDerived="false" isDerivedUnion="false" isID="false" isLeaf="false" isReadOnly="false" isStatic="false" name="amount" type="Integer_id" visibility="private" xmi:id="bSh4JSqFYHwKdAaX" xmi:type="uml:Property">
+					<xmi:Extension extender="Visual Paradigm">
+						<attribute/>
+						<isVisble xmi:value="true"/>
+						<qualityScore value="-1"/>
+					</xmi:Extension>
+				</ownedMember>
+			</ownedAttribute>
 		</ownedMember>
 		<ownedMember xmi:id="Bs74hSqGAqAAZRHq" xmi:type="uml:Connector">
 			<end role="ts54hSqGAqAAZRG5" xmi:id="Bs74hSqGAqAAZRHr" xmi:type="uml:ConnectorEnd">
@@ -6806,6 +6809,29 @@
 				<qualityScore value="-1"/>
 			</xmi:Extension>
 		</ownedMember>
+		<ownedMember xmi:id="qOEMhSqGAqAAZRIl" xmi:type="uml:Connector">
+			<end role="P4YMhSqGAqAAZRIe" xmi:id="qOEMhSqGAqAAZRIm" xmi:type="uml:ConnectorEnd">
+				<xmi:Extension extender="Visual Paradigm">
+					<modelType value="ConnectorEnd"/>
+					<qualityScore value="-1"/>
+				</xmi:Extension>
+			</end>
+			<end role="ts54hSqGAqAAZRG5" xmi:id="qOEMhSqGAqAAZRIn" xmi:type="uml:ConnectorEnd">
+				<xmi:Extension extender="Visual Paradigm">
+					<modelType value="ConnectorEnd"/>
+					<qualityScore value="-1"/>
+				</xmi:Extension>
+			</end>
+			<xmi:Extension extender="Visual Paradigm">
+				<modelType value="Connector"/>
+				<qualityScore value="-1"/>
+			</xmi:Extension>
+		</ownedMember>
+		<ownedMember name="Integer" visibility="public" xmi:id="Integer_id" xmi:type="uml:DataType"/>
+		<ownedMember name="RentalContract" visibility="public" xmi:id="RentalContract_id" xmi:type="uml:DataType"/>
+		<ownedMember name="Return" visibility="public" xmi:id="Return_id" xmi:type="uml:DataType"/>
+		<ownedMember name="String" visibility="public" xmi:id="String_id" xmi:type="uml:DataType"/>
+		<ownedMember name="Damages" visibility="public" xmi:id="Damages_id" xmi:type="uml:DataType"/>
 	</uml:Model>
 	<uml:Diagram diagramType="CompositeStructureDiagram" documentation="" name="PA2" toolName="Visual Paradigm" xmi:id="p3R4hSqGAqAAZRGo">
 		<xmi:Extension extender="Visual Paradigm">
@@ -6815,7 +6841,7 @@
 				<ashowAllocatedTo value="true"/>
 				<apmAuthor value="denis"/>
 				<apmCreateDateTime value="1462991990501"/>
-				<apmLastModified value="1462993206280"/>
+				<apmLastModified value="1463043278375"/>
 				<ateamworkCreateDateTime value="0"/>
 				<ashowPackageNameStyle value="0"/>
 				<ashowConnectorName value="0"/>
@@ -6868,15 +6894,93 @@
 			</properties>
 		</xmi:Extension>
 		<uml:Diagram.element>
-			<uml:DiagramElement geometry="392,217,314,249" preferredShapeType="StructuredClass" subject="zRx4hSqGAqAAZRGw" xmi:id="zRx4hSqGAqAAZRGv">
+			<uml:DiagramElement geometry="744,174,134,110" preferredShapeType="Part" subject="P4YMhSqGAqAAZRIe" xmi:id="8EYMhSqGAqAAZRIi">
 				<xmi:Extension extender="Visual Paradigm">
-					<captionBounds value="0,0,314,14"/>
+					<captionBounds value="0,0,134,110"/>
 					<captionInternalWidth value="-2147483648"/>
 					<captionInternalHeight value="-2147483648"/>
 					<captionVisible value="true"/>
-					<captionSide value="8"/>
+					<captionSide value="6"/>
 					<properties>
-						<azOrder value="7"/>
+						<azOrder value="6"/>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<arequestResetCaptionFitWidth value="false"/>
+						<apresentationOption value="4"/>
+						<aprimitiveShapeType value="0"/>
+						<ashowStereotypeIconName value="0"/>
+						<ashowAllocatedFrom value="0"/>
+						<ashowAllocatedTo value="0"/>
+						<aoverrideAppearanceWithStereotypeIcon value="true"/>
+						<arequestSetSizeOption value="0"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<amodelElementNameAlignment value="9"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<ashowMultiplicityOption value="1"/>
+					</properties>
+					<parentDiagramElement idref="zRx4hSqGAqAAZRGv"/>
+				</xmi:Extension>
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="754,234,106,40" preferredShapeType="Part" subject="bSh4JSqFYHwKdAaX" xmi:id="8yh4JSqFYHwKdAab">
+				<xmi:Extension extender="Visual Paradigm">
+					<captionBounds value="0,0,106,40"/>
+					<captionInternalWidth value="-2147483648"/>
+					<captionInternalHeight value="-2147483648"/>
+					<captionVisible value="true"/>
+					<captionSide value="6"/>
+					<properties>
+						<azOrder value="2"/>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<arequestResetCaptionFitWidth value="false"/>
+						<apresentationOption value="4"/>
+						<aprimitiveShapeType value="0"/>
+						<ashowStereotypeIconName value="0"/>
+						<ashowAllocatedFrom value="0"/>
+						<ashowAllocatedTo value="0"/>
+						<aoverrideAppearanceWithStereotypeIcon value="true"/>
+						<arequestSetSizeOption value="0"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<amodelElementNameAlignment value="9"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<ashowMultiplicityOption value="1"/>
+					</properties>
+					<parentDiagramElement idref="8EYMhSqGAqAAZRIi"/>
+				</xmi:Extension>
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="gc54hSqGAqAAZRG9" geometry="534,338;534,387;761,387;" preferredShapeType="StructuredConnector" subject="Bs74hSqGAqAAZRHq" toDiagramElement="G7t4hSqGAqAAZRHf" xmi:id="Js74hSqGAqAAZRHt">
+				<xmi:Extension extender="Visual Paradigm">
+					<captionBounds value="613,349,20,0"/>
+					<captionInternalWidth value="-2147483648"/>
+					<captionInternalHeight value="-2147483648"/>
+					<captionVisible value="true"/>
+					<captionSide value="1"/>
+					<properties>
+						<azOrder value="4"/>
 						<abackground value="Cr:122,207,245,255"/>
 						<aforeground value="Cr:0,0,0,255"/>
 						<acreatorDiagramType value="CompositeStructureDiagram"/>
@@ -6884,38 +6988,41 @@
 						<arequestResetCaption value="false"/>
 						<arequestResetCaptionSize value="false"/>
 						<arequestResetCaptionFitWidth value="false"/>
-						<apresentationOption value="4"/>
-						<aprimitiveShapeType value="0"/>
-						<ashowStereotypeIconName value="0"/>
-						<ashowAllocatedFrom value="0"/>
-						<ashowAllocatedTo value="0"/>
-						<aoverrideAppearanceWithStereotypeIcon value="true"/>
-						<arequestSetSizeOption value="0"/>
-						<aparentConnectorHeaderLength value="40"/>
-						<aparentConnectorLineLength value="10"/>
-						<aconnectToPoint value="true"/>
-						<aparentConnectorDTheta value="0.0"/>
-						<aconnectionPointType value="2"/>
-						<amodelElementNameAlignment value="9"/>
-						<arequestDefaultSize value="false"/>
-						<arequestFitSize value="false"/>
-						<arequestFitSizeFromCenter value="false"/>
-						<a0DsOp value="0"/>
+						<aconnectorStyle value="3"/>
+						<aconnectorLineJumps value="4"/>
+						<aconnectorLabelOrientation value="4"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<arequestRebuild value="false"/>
+						<ashowConnectorName value="2"/>
+						<apaintThroughLabel value="2"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+						<arequestResetLabels value="false"/>
+						<ahasFromMultiplicity value="false"/>
+						<ahasToMultiplicity value="false"/>
 					</properties>
 				</xmi:Extension>
-				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
 				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
 				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
 			</uml:DiagramElement>
-			<uml:DiagramElement geometry="456,308,96,40" preferredShapeType="Part" subject="ts54hSqGAqAAZRG5" xmi:id="gc54hSqGAqAAZRG9">
+			<uml:DiagramElement geometry="762,346,136,123" preferredShapeType="Part" subject="x7V4hSqGAqAAZRHM" xmi:id="G7t4hSqGAqAAZRHf">
 				<xmi:Extension extender="Visual Paradigm">
-					<captionBounds value="0,0,96,40"/>
+					<captionBounds value="0,0,136,123"/>
 					<captionInternalWidth value="-2147483648"/>
 					<captionInternalHeight value="-2147483648"/>
 					<captionVisible value="true"/>
 					<captionSide value="6"/>
 					<properties>
-						<azOrder value="5"/>
+						<azOrder value="8"/>
 						<abackground value="Cr:122,207,245,255"/>
 						<aforeground value="Cr:0,0,0,255"/>
 						<aselectable value="true"/>
@@ -6946,46 +7053,7 @@
 				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
 				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
 			</uml:DiagramElement>
-			<uml:DiagramElement geometry="597,382,70,40" preferredShapeType="Part" subject="x7V4hSqGAqAAZRHM" xmi:id="G7t4hSqGAqAAZRHf">
-				<xmi:Extension extender="Visual Paradigm">
-					<captionBounds value="0,0,70,40"/>
-					<captionInternalWidth value="-2147483648"/>
-					<captionInternalHeight value="-2147483648"/>
-					<captionVisible value="true"/>
-					<captionSide value="6"/>
-					<properties>
-						<azOrder value="3"/>
-						<abackground value="Cr:122,207,245,255"/>
-						<aforeground value="Cr:0,0,0,255"/>
-						<aselectable value="true"/>
-						<arequestResetCaption value="false"/>
-						<arequestResetCaptionSize value="false"/>
-						<arequestResetCaptionFitWidth value="false"/>
-						<apresentationOption value="4"/>
-						<aprimitiveShapeType value="0"/>
-						<ashowStereotypeIconName value="0"/>
-						<ashowAllocatedFrom value="0"/>
-						<ashowAllocatedTo value="0"/>
-						<aoverrideAppearanceWithStereotypeIcon value="true"/>
-						<arequestSetSizeOption value="0"/>
-						<aparentConnectorHeaderLength value="40"/>
-						<aparentConnectorLineLength value="10"/>
-						<aconnectToPoint value="true"/>
-						<aparentConnectorDTheta value="0.0"/>
-						<aconnectionPointType value="2"/>
-						<amodelElementNameAlignment value="9"/>
-						<arequestDefaultSize value="false"/>
-						<arequestFitSize value="false"/>
-						<arequestFitSizeFromCenter value="false"/>
-						<ashowMultiplicityOption value="1"/>
-					</properties>
-					<parentDiagramElement idref="zRx4hSqGAqAAZRGv"/>
-				</xmi:Extension>
-				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
-				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
-				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
-			</uml:DiagramElement>
-			<uml:DiagramElement geometry="588,322,70,40" preferredShapeType="Part" subject="P4YMhSqGAqAAZRIe" xmi:id="8EYMhSqGAqAAZRIi">
+			<uml:DiagramElement geometry="818,419,70,40" preferredShapeType="Part" subject="2GM0JSqFYHwKdAa_" xmi:id="7GM0JSqFYHwKdAbD">
 				<xmi:Extension extender="Visual Paradigm">
 					<captionBounds value="0,0,70,40"/>
 					<captionInternalWidth value="-2147483648"/>
@@ -7018,63 +7086,141 @@
 						<arequestFitSizeFromCenter value="false"/>
 						<ashowMultiplicityOption value="1"/>
 					</properties>
+					<parentDiagramElement idref="G7t4hSqGAqAAZRHf"/>
+				</xmi:Extension>
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="8EYMhSqGAqAAZRIi" geometry="743,174;519,169;519,213;" preferredShapeType="StructuredConnector" subject="qOEMhSqGAqAAZRIl" toDiagramElement="gc54hSqGAqAAZRG9" xmi:id="GOEMhSqGAqAAZRIo">
+				<xmi:Extension extender="Visual Paradigm">
+					<captionBounds value="583,134,20,0"/>
+					<captionInternalWidth value="-2147483648"/>
+					<captionInternalHeight value="-2147483648"/>
+					<captionVisible value="true"/>
+					<captionSide value="1"/>
+					<properties>
+						<azOrder value="8"/>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<acreatorDiagramType value="CompositeStructureDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<arequestResetCaptionFitWidth value="false"/>
+						<aconnectorStyle value="3"/>
+						<aconnectorLineJumps value="4"/>
+						<aconnectorLabelOrientation value="4"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<arequestRebuild value="false"/>
+						<ashowConnectorName value="2"/>
+						<apaintThroughLabel value="2"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+						<arequestResetLabels value="false"/>
+						<ahasFromMultiplicity value="false"/>
+						<ahasToMultiplicity value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="489,214,193,124" preferredShapeType="Part" subject="ts54hSqGAqAAZRG5" xmi:id="gc54hSqGAqAAZRG9">
+				<xmi:Extension extender="Visual Paradigm">
+					<captionBounds value="0,0,193,124"/>
+					<captionInternalWidth value="-2147483648"/>
+					<captionInternalHeight value="-2147483648"/>
+					<captionVisible value="true"/>
+					<captionSide value="6"/>
+					<properties>
+						<azOrder value="10"/>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<arequestResetCaptionFitWidth value="false"/>
+						<apresentationOption value="4"/>
+						<aprimitiveShapeType value="0"/>
+						<ashowStereotypeIconName value="0"/>
+						<ashowAllocatedFrom value="0"/>
+						<ashowAllocatedTo value="0"/>
+						<aoverrideAppearanceWithStereotypeIcon value="true"/>
+						<arequestSetSizeOption value="0"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<amodelElementNameAlignment value="9"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<ashowMultiplicityOption value="1"/>
+					</properties>
 					<parentDiagramElement idref="zRx4hSqGAqAAZRGv"/>
 				</xmi:Extension>
 				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
 				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
 				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
 			</uml:DiagramElement>
-			<uml:DiagramElement fromDiagramElement="gc54hSqGAqAAZRG9" geometry="504,348;504,415;596,415;" preferredShapeType="StructuredConnector" subject="Bs74hSqGAqAAZRHq" toDiagramElement="G7t4hSqGAqAAZRHf" xmi:id="Js74hSqGAqAAZRHt">
+			<uml:DiagramElement geometry="513,288,76,40" preferredShapeType="Part" subject="k7O4JSqFYHwKdAaA" xmi:id="Z7O4JSqFYHwKdAaE">
 				<xmi:Extension extender="Visual Paradigm">
-					<captionBounds value="506,378,20,0"/>
+					<captionBounds value="0,0,76,40"/>
 					<captionInternalWidth value="-2147483648"/>
 					<captionInternalHeight value="-2147483648"/>
 					<captionVisible value="true"/>
-					<captionSide value="1"/>
+					<captionSide value="6"/>
 					<properties>
-						<azOrder value="-1"/>
+						<azOrder value="4"/>
 						<abackground value="Cr:122,207,245,255"/>
 						<aforeground value="Cr:0,0,0,255"/>
-						<acreatorDiagramType value="CompositeStructureDiagram"/>
 						<aselectable value="true"/>
 						<arequestResetCaption value="false"/>
 						<arequestResetCaptionSize value="false"/>
 						<arequestResetCaptionFitWidth value="false"/>
-						<aconnectorStyle value="3"/>
-						<aconnectorLineJumps value="4"/>
-						<aconnectorLabelOrientation value="4"/>
-						<afromShapeXDiff value="0"/>
-						<afromShapeYDiff value="0"/>
-						<atoShapeXDiff value="0"/>
-						<atoShapeYDiff value="0"/>
-						<afromConnectType value="0"/>
-						<atoConnectType value="0"/>
-						<auseFromShapeCenter value="true"/>
-						<auseToShapeCenter value="true"/>
-						<afromPinType value="1"/>
-						<atoPinType value="1"/>
-						<arequestRebuild value="false"/>
-						<ashowConnectorName value="2"/>
-						<apaintThroughLabel value="2"/>
-						<ahasFromLabel value="false"/>
-						<ahasToLabel value="false"/>
-						<arequestResetLabels value="false"/>
-						<ahasFromMultiplicity value="false"/>
-						<ahasToMultiplicity value="false"/>
+						<apresentationOption value="4"/>
+						<aprimitiveShapeType value="0"/>
+						<ashowStereotypeIconName value="0"/>
+						<ashowAllocatedFrom value="0"/>
+						<ashowAllocatedTo value="0"/>
+						<aoverrideAppearanceWithStereotypeIcon value="true"/>
+						<arequestSetSizeOption value="0"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<amodelElementNameAlignment value="9"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<ashowMultiplicityOption value="1"/>
 					</properties>
+					<parentDiagramElement idref="gc54hSqGAqAAZRG9"/>
 				</xmi:Extension>
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
 				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
 				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
 			</uml:DiagramElement>
-			<uml:DiagramElement fromDiagramElement="8EYMhSqGAqAAZRIi" geometry="623,321;623,263;490,263;490,307;" preferredShapeType="StructuredConnector" subject="qOEMhSqGAqAAZRIl" toDiagramElement="gc54hSqGAqAAZRG9" xmi:id="GOEMhSqGAqAAZRIo">
+			<uml:DiagramElement geometry="421,123,487,373" preferredShapeType="StructuredClass" subject="zRx4hSqGAqAAZRGw" xmi:id="zRx4hSqGAqAAZRGv">
 				<xmi:Extension extender="Visual Paradigm">
-					<captionBounds value="554,226,20,0"/>
+					<captionBounds value="0,0,487,14"/>
 					<captionInternalWidth value="-2147483648"/>
 					<captionInternalHeight value="-2147483648"/>
 					<captionVisible value="true"/>
-					<captionSide value="1"/>
+					<captionSide value="8"/>
 					<properties>
-						<azOrder value="-1"/>
+						<azOrder value="12"/>
 						<abackground value="Cr:122,207,245,255"/>
 						<aforeground value="Cr:0,0,0,255"/>
 						<acreatorDiagramType value="CompositeStructureDiagram"/>
@@ -7082,29 +7228,26 @@
 						<arequestResetCaption value="false"/>
 						<arequestResetCaptionSize value="false"/>
 						<arequestResetCaptionFitWidth value="false"/>
-						<aconnectorStyle value="3"/>
-						<aconnectorLineJumps value="4"/>
-						<aconnectorLabelOrientation value="4"/>
-						<afromShapeXDiff value="0"/>
-						<afromShapeYDiff value="0"/>
-						<atoShapeXDiff value="0"/>
-						<atoShapeYDiff value="0"/>
-						<afromConnectType value="0"/>
-						<atoConnectType value="0"/>
-						<auseFromShapeCenter value="true"/>
-						<auseToShapeCenter value="true"/>
-						<afromPinType value="1"/>
-						<atoPinType value="1"/>
-						<arequestRebuild value="false"/>
-						<ashowConnectorName value="2"/>
-						<apaintThroughLabel value="2"/>
-						<ahasFromLabel value="false"/>
-						<ahasToLabel value="false"/>
-						<arequestResetLabels value="false"/>
-						<ahasFromMultiplicity value="false"/>
-						<ahasToMultiplicity value="false"/>
+						<apresentationOption value="4"/>
+						<aprimitiveShapeType value="0"/>
+						<ashowStereotypeIconName value="0"/>
+						<ashowAllocatedFrom value="0"/>
+						<ashowAllocatedTo value="0"/>
+						<aoverrideAppearanceWithStereotypeIcon value="true"/>
+						<arequestSetSizeOption value="0"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<amodelElementNameAlignment value="9"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<a0DsOp value="0"/>
 					</properties>
 				</xmi:Extension>
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
 				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
 				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
 			</uml:DiagramElement>
